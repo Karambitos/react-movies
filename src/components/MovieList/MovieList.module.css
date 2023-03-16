@@ -1,0 +1,21 @@
+/*
+ *ImageGallery
+ */
+.movieList {
+
+}
+
+.movieLink{
+    color: #000;
+    font-weight: 600;
+    transition: color 300ms;
+    text-decoration: none;
+}
+
+.movieLink:hover{
+    color: #e50914;
+}
+
+.movieItem:not(:last-child) {
+    margin-bottom: 10px;
+}

@@ -41,6 +41,9 @@ img {
   padding-bottom: 24px;
 }
 
+nav{
+  display: flex;
+}
 
 .header {
   top: 0;
@@ -52,9 +55,15 @@ img {
   min-height: 64px;
   padding: 12px 24px;
   color: #fff;
-  background-color: #3f51b5;
+  background-color: #e50914;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.contentMaxWidth {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header a{
@@ -70,8 +79,104 @@ img {
 .header a:hover,
 .header a.active{
   color: black;
+  text-decoration: underline;
 }
 
 .main {
-  padding: 12px 24px;
+  padding: 40px 24px;
+}
+
+[data-testid="tail-spin-loading"] {
+  position: absolute;    
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -54%);
+
+  /* justify-content: center;
+  align-items: center;
+  height: 80vh; */
+}
+
+.ml {
+  margin-left: auto;
+}
+
+
+/*
+ *searchForm
+ */
+ .searchForm {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid grey;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.searchForm [type=submit] {
+  display: flex;
+  width: 48px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.searchForm [type=submit]:hover {
+  opacity: 1;
+}
+
+.searchForm [type=submit] span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.searchForm input {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 20px;
+}
+
+.searchForm input:focus {
+  outline: none;
+}
+
+.searchForm input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+
+
+.button-main{
+  display: inline-block;
+  cursor: pointer;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 300ms ;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.button-main:hover,
+.button-main:focus,
+.button-main.active {
+    background-color: #212121;
 }

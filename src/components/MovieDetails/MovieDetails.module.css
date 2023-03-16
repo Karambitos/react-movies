@@ -1,0 +1,77 @@
+
+.mainWrapper{
+    /* display: flex; */
+    margin: 40px auto;
+}
+
+.posterWrapper {
+    display: flex;
+    max-width: 240px;
+    flex: 1 0 auto;
+}
+
+.poster {
+    object-fit: contain;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.infoWrapper {
+    padding: 40px 0;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.description {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.overview {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  
+.genres ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.genres li {
+    margin-right: 1rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.buttonsWrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    .mainWrapper {
+      display: flex;
+    }
+
+    .infoWrapper {
+        padding: 40px;
+    }
+  }
