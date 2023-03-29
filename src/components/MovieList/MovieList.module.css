@@ -2,20 +2,41 @@
  *ImageGallery
  */
 .movieList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+}
 
+.movieItem {
+    flex: 1 0 200px;
+    /* height: auto; */
+}
+
+.poster{
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto 10px;
 }
 
 .movieLink{
+    display: block;
     color: #000;
     font-weight: 600;
     transition: color 300ms;
     text-decoration: none;
+    height: auto;
+    text-align: center;
+    overflow: ;
 }
 
 .movieLink:hover{
     color: #e50914;
+
 }
 
-.movieItem:not(:last-child) {
-    margin-bottom: 10px;
-}
+
+
+/*  */
